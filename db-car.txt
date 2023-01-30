@@ -1,0 +1,32 @@
+
+//Descrizione:
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario//
+
+
+Nome tabella: automobili
+__________________________________________________________________________________________________________________________________________
+
+    id                              intero              MEDIUMINT                       PRIMARY_KEY AUTO_INCREMENT UNIQUE
+    marca                           stringa             VARCAHR(20)                     NOTNULL
+    modello                         stringa             VARCAHR(20)                     NOTNULL
+    versione                        stringa             VARCHAR(20)                     NULL
+    citta_di_vendita                stringa             VARCAHR(40)                     NOTNULL
+    carburante                      stringa             VARCHAR(15)                     NOTNULL
+    anno_immatricolazione           date                YEAR                            NOTNULL
+    chilometraggio                  intero              SMALLINT                        NOTNULL
+    potenza_kw                      intero              SMALLINT                        NOTNULL
+    potenza_cv                      intero              SMALLINT                        NULL
+    cambio                          stringa             VARCAHR(15)                     NULL
+    descrizione                     stringa             TEXT                            NULL
+    venditore                       stringa             VARCAHR(50)                     NULL
+    numero_di_porte                 intero              TINYINT                         NULL 
+    numero_di_posti                 intero              TINYINT                         NULL
+    condizioni_del_veicolo          stringa             VARCAHR(15)                     NOTNULL
+    dotazioni                       stringa             VARCAHR(50)                     NULL
+    colore_della_carrozzeria        stringa             VARCAHR(15)                     NOTNULL
+    colore_interni                  stringa             VARCAHR(15)                     NULL
+    veicolo_danneggiato             intero              TINYINT / (TRUE/FALSE)          NOTNULL 
+    garanzia_ufficiale              intero              TINYINT / (TRUE/FALSE)          NULL
+    classe_emissioni                intero              TINYINT                         NOTNULL
+    prezzo_di_vendita               float               FLOAT(8,2)                      NOTNULL
+__________________________________________________________________________________________________________________________________________
